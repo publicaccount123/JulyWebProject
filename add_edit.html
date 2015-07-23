@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Add/Edit Candidate</title>
+	<link rel="stylesheet" type="text/css" href="styles/bg.css">
+</head>
+<body>
+	
+		<form method="post" action="add_done.php" enctype="multipart/form-data">
+			<br/><br/>
+			<fieldset>
+				<br/>
+
+				<legend>Candidate Details</legend>
+
+				<table>
+					<tr>
+						<td width="70%">
+							<label>First Name:</label><input type="text" name="firstname"/>
+							<label>Last  Name:</label><input type="text" name="lastname"/>
+							<br/><br/>
+							
+							<label>Date of Birth:</label>
+							<input type="date" name="birthday"/>
+							<br/><br/>
+							
+							<label>HomeCountry:</label>
+							<select>
+								<option>American</option>
+								<option>Not American</option>
+							</select>
+
+							<label>Visa Status:</label>
+							<select>
+								<option>F1</option>
+								<option>H1B</option>
+								<option>Resident</option>
+							</select>
+							<br/><br/>
+
+							<label>Education Level:</label>
+							<input type="radio" name="edulevel1" value="bachelor"/>Bachelor
+							<input type="radio" name="edulevel2" value="master"/>Master
+							<input type="radio" name="edulevel3" value="phd"/>PHD
+						</td>
+						<td>
+							<label>Upload image*</label><br/>
+							<input type="file" name="uploadfile"/><br/>
+							<small><em> * Acceptable image formats include: GIF, JPG/JPEG and PNG.</em></small>
+						</td>
+					</tr>
+				</table>
+				
+				
+			</fieldset>
+			<br/><br/>
+			<fieldset>
+				<br/>
+				<legend>Contact Information</legend>
+
+				
+				<label>Street:</label><input type="text" name="address"/>
+
+				<label>BuildingNo./APTNo.:</label><input type="text" name="address"/>
+				<br/><br/>
+
+				<label>City:</label><input type="text" name="address"/>
+				
+				<label>State:</label><input type="text" name="address"/>
+				<br/><br/>
+
+				<label>Zip/Postal code:</label><input type="text" name="address"/>
+				<br/><br/>
+
+				<label>Phone:</label><input type="text" name="phone"/>
+
+				<label>Email:</label><input type="email" name="email">
+				
+			</fieldset>
+			<br/><br/>
+			<fieldset>
+				<br/>
+				<legend>Current Status</legend>
+				<label>Status:</label>
+				<select>
+					<option>Training</option>
+					<option>Marketing</option>
+					<option>Potential</option>
+				</select>
+				<br/><br/>
+
+				<label>Training Mode:</label>
+				<input type="radio" name="TrainMode" value="paid"/>Paid Training
+				<input type="radio" name="TrainMode" value="free"/>Free Training
+				<input type="radio" name="TrainMode" value="no"/>No Training
+				<br/><br/>
+
+				<label>Profile Created Date:</label>
+				<input type="date" name="ProCreated"/>
+				<br/><br/>
+
+				<label>Profile Last Changed Date:</label>
+				<input type="date" name="ProChanged"/>
+				<br/><br/>
+
+				<label>Contact Person:</label>
+				<input type="text" name="ConPerson"/>
+				<br/><br/>
+
+				<label>Technology Program:</label>
+				<input type="radio" name="technology" value="bigdata"/>Big Data(Hadoop)
+				<input type="radio" name="technology" value="php"/>PHP Developer
+				<input type="radio" name="technology" value="sql"/>SQL Developer
+				<br/><br/>
+
+				<label>Upload Resume:</label>
+				<input type="file" name="resume" />
+				<input type="submit" value="Upload" />
+
+			</fieldset>
+			<br/><br/>
+			
+			<fieldset>
+				<br/>
+				<input type="submit" value="Confirm and Submit" />
+				<input type="submit" value="Cancel" />
+			</fieldset>
+			
+
+		</form>
+
+</body>
+</html>
